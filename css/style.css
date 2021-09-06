@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(-45deg, #333, rgb(80, 51, 51), rgb(175, 65, 65));
+    animation: gradientBG 7s ease infinite ;
+    height: 100vh;
+    width: 100%;
+    background-size: 400% 400%;
+    margin: 0;
+} 
+/* @keyframes moveB {
+    0%, 100% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+} */
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0;
+}
+div {
+    display: flex;
+    justify-content: space-around;
+}
+img {
+    width: 400px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    transition: .3s;
+    padding: 20px 35px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: 0;
+}
+
+button:hover{
+    padding: 20px 35px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    border: 2px solid #333;
+    font-size: 20px;
+}
